@@ -32,9 +32,9 @@ resource "aws_security_group" "prov_fw" {
   name = "prov_fw"
 
   ingress {
-    from_port = 22
+    from_port = 2222
     protocol = "tcp"
-    to_port = 22
+    to_port = 2222
     cidr_blocks = ["0.0.0.0/0"]
   }
 
